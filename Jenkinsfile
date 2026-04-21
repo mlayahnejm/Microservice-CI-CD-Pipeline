@@ -6,7 +6,7 @@ pipeline {
             steps {
                 checkout([
                     $class: 'GitSCM',
-                    branches: [[name: '*/main']],
+                    branches: [[name: '**']],
                     userRemoteConfigs: [[url: 'https://github.com/mlayahnejm/Microservice-CI-CD-Pipeline.git']]
                 ])
             }
